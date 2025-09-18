@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header id="heading">
+    <div id="logo"><img src="logo.png" alt=""></div>
+    <div id="links">
+        <ul id="navlinks">
+        <li><a href=""class="navlink">MEN</a></li>
+        <li><a href=""class="navlink">WOMEN</a></li>
+        <li><a href=""class="navlink">KIDS</a></li>
+        <li><a href=""class="navlink">HOME</a></li>
+        <li><a href=""class="navlink">BEAUTY</a></li>
+        <li><a href=""class="navlink">STUDIO <sup>NEW</sup></a></li>
+        <li><div class="input1"><i class="fa-solid fa-magnifying-glass" style="color: #45434c;"></i><input type="text" placeholder="Search for products,brands and more" id="input"></div></li>
+        <li class="icon"><i class="fa-regular fa-user" style="color: #45434c;"></i>Profile</li>
+        <li class="icon"><i class="fa-regular fa-heart" style="color: #45434c;"></i>Wishlist</li>
+        <li class="icon"><i class="fa-solid fa-bag-shopping"style="color: #45434c;"></i>bag</li>
+    </ul></div>
+   </header>
+   <div id="maincontent">
+   <div id="banner"></div>
+   <div id="scontent">
+    <div><a href=""><img src="sc1.png" alt="" style="width: 100%; height: 18vh;"></a></div>
+    <div><a href=""><img src="sc2.png" alt="" style="width: 100%; height: 18vh;"></a></div>
+    <div><a href=""><img src="sc3.png" alt="" style="width: 100%; height: 18vh;"></a></div>
+   </div>
+   <div id="tcontent">
+    <img src="tc.png" alt="" style="height: 13vh;">
+   </div>
+   <div id="fcontent">
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+    <div class="fcards"><a href=""><img src="" alt=""></a></div>
+   </div>
+ </div>
+ <footer>
+    <div id="backtotop"><a href="index.html" target="_top"
+        style="text-decoration: none;color: rgb(41, 39, 39);font-size: medium;">
+        <h3>Back to Top</h3>
+      </a></div>
+      <div id="footer">
+        
+          <div class="footcnt">
+            <p class="fctitle">Useful Links</p><br>
+            <ul class="fclist">
+                <li class="fcoption"><img src="f1.png" alt="" style="height: 50px;width: 50px;">100% ORIGINAL guarantee for all products at myntra.com</li>
+                <li class="fcoption"><img src="f2.png" alt=""style="height: 50px;width: 50px;">Return within 14days of receiving your order</li>
+            </ul>
+        </div>
+         <div class="footcnt">
+            <p class="fctitle">Experience Myntra on Mobile</p><br>
+            <ul class="fclist">
+                <li class="fcoptions"><i class="fa-brands fa-google-play"></i><p>Google Play</p></li>
+                <li class="fcoptions"><i class="fa-brands fa-app-store-ios"></i></i><p>AppStore</p></li>
+                </ul>
+        </div>
+        <div class="footcnt">
+            <p class="fctitle">Reach US</p><br>
+            <ul class="fclist">
+                <li class="fcoptions"><i class="fa-regular fa-envelope"></i><p>E-mail</p></li>
+                <li class="fcoptions"><i class="fa-brands fa-instagram"></i><p>Instagram</p></li>
+                <li class="fcoptions"><i class="fa-brands fa-facebook"></i><p>Facebook</p></li>
+            </ul>
+        </div>
+      
+    </div>
+  </footer>
+   <img src="chatbot.jpg" alt="" id="chatbot">
+    <div id="cbsection">
+        <div id="top">
+            <i class="fa-brands fa-bots"></i>
+            <i class="fa-solid fa-xmark" id="close" style="font-size: 20px; position: absolute; right: 10px;" ></i>
+        </div>
+        <div id="mid">
+
+        </div>
+        <div id="bottom">
+            <input type="text" placeholder="Type something..." style="border: none;height: inherit;width: inherit;">
+            <i class="fa-solid fa-paper-plane" style="margin: 15px 15px 0 20px;"></i>
+        </div>
+    </div>
+    
+</body>
+<script>
+   let bot = document.getElementById("chatbot")
+   let messagebox = document.getElementById("cbsection")
+   let close = document.getElementById("close")
+
+   bot.addEventListener("click",()=>{
+    messagebox.style.display="block"
+   })
+   close.addEventListener("click",()=>{
+    messagebox.style.display="none"
+   })
+</script>
+</html>
